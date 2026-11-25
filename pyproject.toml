@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bf16ai"
+version = "0.1.0"
+description = "Official zero-dependency Python SDK for bf16.ai — uncensored 1M-context LLM inference API with prompt caching and strict Zero Data Retention."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "BF16 Team", email = "hello@bf16.ai" }]
+keywords = [
+    "bf16",
+    "bf16.ai",
+    "llm",
+    "ai",
+    "openai-compatible",
+    "anthropic",
+    "deepseek",
+    "glm",
+    "kimi",
+    "uncensored",
+    "1m-context",
+    "zdr",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://bf16.ai"
+Documentation = "https://bf16.ai/docs"
+Repository = "https://github.com/BF16-AI/bf16-python"
+Models = "https://bf16.ai/models"
+Pricing = "https://bf16.ai/pricing"
+"Open-Source Grants" = "https://bf16.ai/open-source"
+
+[tool.setuptools.packages.find]
+include = ["bf16ai*"]
